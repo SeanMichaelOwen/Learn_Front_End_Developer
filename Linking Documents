@@ -1,0 +1,41 @@
+Linking Documents
+Step one:
+Create A File Location.html
+
+Next Step, Type Code:
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Little Lemon</title>
+    </head>
+    <body>
+        <h1>Our Menu</h1>
+        <h2>Falafel</h2>
+        <p>Chickpea, herbs and spices</p>
+        <h2>Pasta Salad</h2>
+        <p>Lettuce, vegetables, mozzarella</p>
+        <a href="./Location.html">Our Location</a>
+    </body>
+</html>
+And Run In Your Browser
+
+Membuat tag link di html
+langkah satu:
+Buat Sebuah File Lokasi.html
+
+Langkah selanjutnya, ketik code:
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Little Lemon</title>
+    </head>
+    <body>
+        <h1>Our Menu</h1>
+        <h2>Falafel</h2>
+        <p>Chickpea, herbs and spices</p>
+        <h2>Pasta Salad</h2>
+        <p>Lettuce, vegetables, mozzarella</p>
+        <a href="./Location.html">Our Location</a>
+    </body>
+</html>
+Dan jalankan di browser kalian
