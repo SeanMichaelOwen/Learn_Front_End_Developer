@@ -1,0 +1,116 @@
+What is a web server and how does it work?
+A server is a computer that runs applications and services ranging from websites to instant messaging. 
+It's called a server because it provides a service to another computer and its user also known as the client. 
+Is typically stored in something called a data center with hundreds or thousands of other servers, 
+all running different services connected to the internet. 
+There are many different systems in data centers to ensure that servers have continuous power, 
+continuous internet connection and are kept called 24 hours per day. 
+Did you know that there are data centers located all around the world.
+Many websites use these to allow you to access your content quickly from the data center nearest to you.
+The data center servers are built based on the service purpose. For example, 
+if the server is only to be used for storing images, it might have a lot of hard drive space. 
+Whereas a server computing complex calculations might need a fast processor and a lot of memory. 
+This is usually referred to as a server hardware. The physical components of a server. 
+Once the server hardware is installed in the data center, a piece of code can now run. 
+The code that runs on the hardware is commonly known as software. 
+One way I like to remember this is to think of hardware as something you can physically touch and is difficult to change as you need to physically replace components. 
+Software is soft or easy to change. You just replace the code running on the server. 
+The surface is a server can run can vary but in this video you will learn about a type of service software known as a web server. 
+A web server has many functions which includes website storage and administration, data storage, security and managing email. 
+Another primary function is to handle something known as a web request. 
+When you open a browser on your device and type the name of the website, it's the job of the web server to send you back to that website's content. 
+This process is known as the request response cycle and you will learn more about it later. 
+Web servers are also designed to respond to thousands of requests from clients per second. In this video, 
+you learned about web servers and how they consist of hardware and software. 
+You also learned that one of the primary roles of a web server is to respond to web requests from the client.
+
+
+Apa itu browser web dan bagaimana cara kerjanya?
+Anda menggunakan browser web setiap hari di perangkat Anda
+dan Anda mungkin memiliki satu terbuka
+sekarang menonton video ini.
+Tapi apakah Anda benar-benar tahu cara kerjanya?
+Dalam video ini, Anda akan mempelajari apa itu browser web dan
+menjelaskan bagaimana menerima dan menampilkan
+isi. Mari kita mulai.
+Peramban web, atau singkatnya peramban,
+adalah aplikasi perangkat lunak yang Anda
+gunakan untuk menelusuri World Wide Web.
+Ini bekerja dengan mengirimkan permintaan ke server web dan kemudian
+menerima respons yang berisi konten yang
+akan ditampilkan di layar perangkat Anda.
+Setelah browser terbuka di perangkat Anda,
+ada bilah alamat tempat Anda memasukkan
+alamat situs web yang ingin Anda kunjungi.
+Alamat tersebut biasa disebut dengan
+Uniform Resource Locator atau singkatnya URL.
+URL berisi protokol
+atau HTTP, nama domain,
+biasanya nama websitenya
+dan path file, atau
+jalur ke halaman yang ditampilkan.
+Saat Anda membuat permintaan menggunakan URL ini,
+browser dan server berkomunikasi menggunakan protokol
+dikenal sebagai Hypertext Transfer Protocol atau HTTP.
+Setelah browser web menerima konten,
+itu menampilkannya di layar perangkat Anda.
+Pertukaran informasi ini dimungkinkan
+oleh sesuatu yang dikenal sebagai siklus respons permintaan.
+Sekarang, izinkan saya mendemonstrasikan penggunaan ini
+contoh banyak dari kita
+akrab dengan, mencari web.
+Pertama, Anda membuka web browser,
+yang merupakan aplikasi perangkat lunak.
+Selanjutnya, Anda mengetikkan nama mesin pencari favorit Anda.
+Nama yang Anda ketik berisi
+sesuatu yang disebut nama domain.
+Kemudian ketika Anda menekan Enter,
+browser web mengirimkan permintaan melalui jaringan dan
+terhubung ke komputer lain di
+internet disebut web server.
+Server web adalah jenis komputer khusus yang
+memungkinkan komputer lain untuk membuat permintaan data.
+Server web merespons dengan
+mengirim halaman web kembali ke browser.
+Setelah browser menerima semua informasi respons,
+halaman web mesin pencari dibuat terlihat.
+Halaman web adalah dokumen kode yang diberikan oleh
+browser dan kemudian disajikan
+secara visual kepada Anda, pengguna akhir.
+Sekarang halaman web mesin pencari
+dimuat di browser,
+Anda berinteraksi dengan halaman itu untuk
+mencari apa yang ingin Anda temukan.
+Misalnya, ketik restoran terdekat
+saya di bilah pencarian dan tekan tombol pencarian.
+Sekali lagi, browser menyiapkan dan mengirim
+permintaan ke server web mesin pencari yang sama.
+Kali ini, permintaan berisi
+petunjuk tambahan untuk mencari
+frase restoran di dekat saya.
+Server web mesin pencari memproses permintaan oleh
+mengambil kata kunci dan
+menggunakannya untuk menemukan data yang diminta.
+Data ini disimpan dalam sesuatu yang disebut database,
+yang terhubung ke web server.
+Server web kemudian mengambil
+data itu dan mengirimkannya kembali ke browser.
+Saat browser web menerima
+respons penuh dari server web,
+itu lagi membuat halaman web terlihat
+dengan tautan ke beberapa restoran,
+peta yang menunjukkan lokasi terdekat dan
+informasi terkait lainnya seperti ulasan,
+daftar, dan bahkan reservasi.
+Sukses, dan semua dibuat
+mungkin oleh komputer memiliki percakapan.
+Anda sekarang mempelajari cara kerja siklus respons permintaan.
+Siklus permintaan web ini sangat mirip untuk
+sejumlah aktivitas lain yang kami lakukan secara online,
+melalui chatting dengan teman,
+menonton film favorit kita,
+atau berbagi file dengan rekan kerja kita.
+Itu hanya ringkasan singkat tentang cara kerja Internet.
+Lain kali Anda mencari sesuatu secara online,
+memikirkan semua langkah dan data yang didapat
+ditukar untuk menyelesaikan permintaan Anda.
