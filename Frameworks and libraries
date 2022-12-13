@@ -1,0 +1,188 @@
+Frameworks and libraries
+You are developing solutions but you need to save some time and build faster.
+What if some of your build problems have already been solved for you? Well it's true,
+someone has already figured out many key development processes and they're contained in frameworks and libraries that are used every day in software development, so what exactly are frameworks and libraries? 
+Let's say you are not a developer, but instead you work as a carpenter. You make chairs and sell them online. 
+As a carpenter you don't design a new hammer for every chair you make. 
+It makes much more sense to use an existing hammer, but of course you are a developer. 
+As such it's important for you to know that to speed up development, 
+developers use already developed frameworks and libraries in their application development. 
+These might be open source, meaning that the source code is freely-available for anyone to modify and build from.
+There are thousands of open source libraries and frameworks available or there might be proprietary, ones that are licensed or developed internally. 
+Many developers use the terms framework and library interchangeably,so what's the difference between them? 
+Libraries are reusable pieces of code that can be used by your application. 
+They are purpose-built to provide a specific functionality. To give a more technical example, you're building a small e-commerce website. 
+When a user wants to register they need to provide their email address. Email addresses while easy to read can be complicated to validate. 
+In fact email addresses are defined across several technical specifications. That's a lot of reading just to validate an email. 
+Even if you do read through all the specification, there's no point in spending hours or even days implementing their standards because you have access to so many readily-available libraries to validate email addresses. 
+It is for specific functionality like validating an email address that libraries are useful.
+A developers simply uses the library to access the functionality they require, as a result they can have more time to continue focusing on the development of their application. 
+Frameworks on the other hand provide a structure for developers to build with. Consider this in the context of our carpenter analogy. 
+As a carpenter you create a lot of different chairs, therefore there would be a blueprint for each chair to speed up building them. 
+You can decide the type of wood to use, but the dimensions and style of the chair are always the same. 
+Frameworks act as a structure where the developer provides their own code that the framework interacts with. 
+For example, there are many frameworks for developing web applications. 
+These frameworks handle functionality that is common to all web applications such as receiving HTTP requests and sending HTTP responses. 
+The developer then adds their own code that implements the functionality of the web application. 
+For instance with the e-commerce website example, a framework would handle receiving HTTP requests. 
+The developer would implement code that processes the request and returns a response from which the framework would send a response over HTTP. 
+Now let's compare how the frameworks relate to libraries. Most frameworks use many libraries.
+The libraries that the framework uses can be used for your application. If you wish, your application can also use other libraries. 
+You also need to consider when to use a framework and when to use a library. 
+Frameworks are considered opinionated and libraries are considered unopinionated.
+This is defined as the degree of freedom available to the developer to choose how to code a feature. 
+The opinionatedness will vary between frameworks, but by definition they will always be more opinionated than a library.
+The benefit of this is that they can replace libraries as needed. 
+For example when new technologies become available frameworks to find the libraries flow and control of an application, 
+whereas with the libraries those are left to the developer to decide. As with everything there are advantages and disadvantages to both. 
+Frameworks are a great way to reduce development time and to enforce a structure on how code is written. 
+They have many best practices already in place and contain most of what is needed to develop an application, however, 
+sometimes you may find that the way you need to code something doesn't fit into the structure of the framework. 
+Other times you may find that some of the libraries the framework uses may conflict with a library that you are required to use and cause compatibility issues. 
+If an application is built without a framework, the developer will need to decide on the set of libraries they wish to use to achieve the functionality they must deliver. 
+They will also need to take care that the selected libraries can work together. 
+The upside to this is that they can replace libraries as needed. For example, if a new better library is released, the developer can replace the usage of the old library. 
+This is much easier than replacing a framework. Frameworks and libraries give you the opportunity to reuse existing web app functions. 
+This can result in faster development, fewer errors, and more time for you to spend on the essential features of your application. 
+Instead of reinventing the wheel, you can use frameworks and libraries that are designed specifically to help your web app development processes.
+
+
+Indonesian:
+Anda sedang mengembangkan solusi tetapi Anda membutuhkannya
+untuk menghemat waktu dan membangun lebih cepat.
+Bagaimana jika beberapa masalah build Anda
+sudah dipecahkan untuk Anda?
+Memang benar sudah ada yang tahu
+banyak proses pengembangan kunci dan mereka terkandung di dalamnya
+framework dan library yang digunakan
+setiap hari dalam pengembangan perangkat lunak,
+jadi apa sebenarnya framework dan library itu?
+Katakanlah Anda bukan pengembang,
+tetapi sebaliknya Anda bekerja sebagai tukang kayu.
+Anda membuat kursi dan menjualnya secara online.
+Sebagai tukang kayu Anda tidak merancang
+palu baru untuk setiap kursi yang Anda buat.
+Lebih masuk akal untuk menggunakan palu yang ada,
+tapi tentu saja Anda seorang pengembang.
+Karena itu penting bagi Anda untuk
+tahu bahwa untuk mempercepat pembangunan,
+pengembang menggunakan kerangka kerja yang sudah dikembangkan
+dan perpustakaan dalam pengembangan aplikasi mereka.
+Ini mungkin open source,
+berarti bahwa kode sumber adalah
+bebas-tersedia bagi siapa saja untuk memodifikasi dan membangun dari.
+Ada ribuan perpustakaan open source dan
+kerangka kerja tersedia atau mungkin ada hak milik,
+yang dilisensikan atau dikembangkan secara internal.
+Banyak pengembang menggunakan istilah framework
+dan perpustakaan secara bergantian,
+jadi apa perbedaan antara mereka?
+Perpustakaan adalah bagian yang dapat digunakan kembali
+kode yang dapat digunakan oleh aplikasi Anda.
+Mereka dibangun dengan tujuan untuk
+menyediakan fungsionalitas tertentu.
+Untuk memberikan contoh yang lebih teknis,
+Anda sedang membangun situs web e-niaga kecil.
+Ketika seorang pengguna ingin mendaftar mereka
+perlu memberikan alamat email mereka.
+Alamat email sementara mudah
+baca bisa rumit untuk divalidasi.
+Sebenarnya alamat email adalah
+didefinisikan di beberapa spesifikasi teknis.
+Itu banyak membaca hanya untuk memvalidasi email.
+Bahkan jika Anda membaca semua spesifikasi,
+tidak ada gunanya menghabiskan berjam-jam
+atau bahkan berhari-hari menerapkan standar mereka
+karena Anda memiliki akses ke
+begitu banyak perpustakaan yang tersedia
+untuk memvalidasi alamat email.
+Ini untuk fungsi tertentu seperti
+memvalidasi alamat email bahwa perpustakaan berguna.
+Seorang pengembang cukup menggunakan perpustakaan
+untuk mengakses fungsi yang mereka butuhkan,
+sebagai hasilnya mereka dapat memiliki lebih banyak waktu untuk
+terus fokus pada
+pengembangan aplikasi mereka.
+Kerangka di sisi lain menyediakan
+struktur bagi pengembang untuk membangun.
+Pertimbangkan ini dalam konteks analogi tukang kayu kita.
+Sebagai seorang tukang kayu Anda membuat banyak kursi yang berbeda,
+oleh karena itu akan ada
+cetak biru untuk setiap kursi untuk mempercepat pembangunannya.
+Anda dapat memutuskan jenis kayu yang akan digunakan,
+tapi dimensi dan
+gaya kursi selalu sama.
+Kerangka kerja bertindak sebagai struktur tempat pengembang
+memberikan kode mereka sendiri
+yang berinteraksi dengan framework.
+Misalnya, ada
+banyak kerangka kerja untuk mengembangkan aplikasi web.
+Kerangka kerja ini menangani fungsionalitas
+yang umum untuk semua aplikasi web
+seperti menerima permintaan HTTP
+dan mengirim respons HTTP.
+Pengembang kemudian menambahkan kode mereka sendiri itu
+mengimplementasikan fungsionalitas aplikasi web.
+Misalnya dengan contoh situs web e-niaga,
+kerangka kerja akan menangani menerima permintaan HTTP.
+Pengembang akan menerapkan
+kode yang memproses permintaan dan pengembalian
+tanggapan dari mana kerangka kerja
+akan mengirim respons melalui HTTP.
+Sekarang mari kita bandingkan bagaimana kerangka berhubungan dengan perpustakaan.
+Kebanyakan framework menggunakan banyak library.
+Library yang digunakan framework
+dapat digunakan untuk aplikasi Anda.
+Jika Anda mau, aplikasi Anda
+bisa juga menggunakan library lain.
+Anda juga perlu mempertimbangkan kapan akan digunakan
+kerangka kerja dan kapan menggunakan perpustakaan.
+Kerangka kerja dianggap berpendirian
+dan perpustakaan dianggap unopinionated.
+Ini didefinisikan sebagai derajat kebebasan
+tersedia untuk pengembang untuk
+memilih cara mengkode fitur.
+Opini akan bervariasi antara kerangka kerja,
+tetapi menurut definisi mereka akan selalu
+lebih beropini daripada perpustakaan.
+Manfaat dari ini adalah mereka bisa
+mengganti perpustakaan sesuai kebutuhan.
+Misalnya ketika teknologi baru menjadi
+kerangka kerja yang tersedia untuk ditemukan
+aliran perpustakaan dan kontrol aplikasi,
+sedangkan dengan perpustakaan
+itu diserahkan kepada pengembang untuk memutuskan.
+Seperti semua yang ada
+kelebihan dan kekurangan keduanya.
+Kerangka kerja adalah cara yang bagus untuk mengurangi
+waktu pengembangan dan untuk menegakkan
+struktur tentang bagaimana kode ditulis.
+Mereka memiliki banyak praktik terbaik yang sudah ada dan
+mengandung sebagian besar dari apa yang dibutuhkan
+untuk mengembangkan aplikasi,
+namun, kadang-kadang Anda mungkin menemukan cara yang Anda butuhkan
+kode sesuatu yang tidak cocok
+ke dalam struktur kerangka.
+Di lain waktu Anda mungkin menemukan bahwa beberapa dari
+pustaka yang digunakan kerangka kerja mungkin
+konflik dengan perpustakaan yang Anda diminta untuk
+gunakan dan menyebabkan masalah kompatibilitas.
+Jika sebuah aplikasi dibangun tanpa framework,
+pengembang harus memutuskan kumpulan perpustakaan
+mereka ingin gunakan untuk mencapai
+fungsionalitas yang harus mereka berikan.
+Mereka juga akan perlu untuk mengurus itu
+perpustakaan yang dipilih dapat bekerja sama.
+Keuntungan dari ini adalah mereka bisa
+mengganti perpustakaan sesuai kebutuhan.
+Misalnya, jika perpustakaan baru yang lebih baik dirilis,
+pengembang dapat mengganti penggunaan perpustakaan lama.
+Ini jauh lebih mudah daripada mengganti kerangka kerja.
+Framework dan library memberi Anda kesempatan
+untuk menggunakan kembali fungsi aplikasi web yang ada.
+Ini dapat menghasilkan pengembangan yang lebih cepat, lebih sedikit kesalahan,
+dan lebih banyak waktu untuk Anda habiskan
+fitur penting dari aplikasi Anda.
+Alih-alih menemukan kembali roda,
+Anda dapat menggunakan kerangka kerja dan pustaka yang dirancang
+khusus untuk membantu proses pengembangan aplikasi web Anda.
