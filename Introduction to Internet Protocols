@@ -1,0 +1,206 @@
+Introduction to Internet Protocols
+Email is a common communication method that we all know about. 
+But before existed the alternative was to send mail to one another through the postal system. 
+There is a surprising parallel between the postal system and how the computer sends and receives data across the internet every day. 
+Let's compare how they both work. Data sent across the internet is quite an important part of our everyday lives and it wouldn't be 
+possible without Internet Protocol addresses or IP addresses. A useful way to think of IP addresses is that they function much like 
+addresses in a postal system that make it possible for packets of information to be delivered to you. 
+And like with the postal system things can go wrong. But let's first go over how things work. 
+Before we think about how they can go wrong in this video you will learn what IP addresses are and explore how computers send data across the internet. 
+You probably learned how computers connect to each other to form networks and how these networks connect to each other to form the internet.
+When you send data between computers across the internet, a common way of understanding that data is needed by the computers and networks that the data 
+travels across. What makes that possible is the Internet Protocol. 
+Version four and version six are currently the two most widely used standards of internet protocol. 
+Think of the old fashioned postal system again when you send a letter to a friend you need their address otherwise they won't receive your letter. 
+Computers work in a similar way. Every computer on a network is assigned an IP address. In protocol version four an IP address contains four octet. 
+It's separated by periods or dots. For example 192.0.2.235. In protocol version six. 
+An IP address contains eight groups of hexadecimal digits separated by a colon. For example 4527:0a00:1567:0200:ff00:0042:8329.
+
+When you send data across a network, you send the data as a series of messages called IP packets. 
+Also known as data grams at a high level IP packets contain a header and a payload or the data. 
+Think of that old fashioned postal system again, when you send a letter.
+You not only include the recipient's address but also your own address in case a return location is needed. 
+IP packets are the same. They include the destination IP address and source IP address. 
+These addresses are in the header along with some additional information to help deliver the packet.
+And the payload contains the data of the packet and some of the other protocols which will cover in a moment. 
+Earlier I mentioned that things can go wrong with the postal system. 
+When sending multiple letters to a friend it's possible they may arrive out of order. 
+It's possible that a package will get damaged or if you're really unlucky a letter could get lost. 
+These issues can happen to IP packets too they can arrive out of order, become damaged or corrupted to in transit or be dropped or lost during transit. 
+To solve these problems, the payload part of the packets contains other protocols too.
+You can think of them as another message inside the payload of the IP packet.
+The two most common protocols are the Transmission Control Protocol referred to as TCP and the User Datagram Protocol, also known as UDP. 
+TCP can solve all three of the previously mentioned issues but at the cost of a small delay when sending the data.
+This protocol is used for sending the data that must arrive correctly and in order such as a text or image files.
+UDP solves the corrupt packet issue but packets can still arrive out of order or not arrive at all. 
+This protocol is used for sending data that can tolerate some data loss such as voice calls or live video streaming. 
+Both of these protocols contain payloads that contain further protocols inside of them and there you have it. 
+The internet uses internet protocols much like an old fashioned postal system. 
+These protocols can help to make sure that data arrives in order does not become corrupted or lost or dropped during transit. 
+Now you're able to explain how IP addresses work and how computers send data across the internet.
+
+
+Indonesian:
+Pengertian Protokol Jaringan
+
+Protokol adalah sistem peraturan yang memungkinkan terjadinya hubungan, komunikasi, dan perpindahan data antara dua komputer atau lebih. Aturan ini harus dipenuhi oleh pengirim dan penerima agar komunikasi dapat berlangsung dengan baik.
+
+Sederhananya, protokol adalah media yang digunakan untuk menghubungkan pengirim dan penerima. Protokol dapat diterapkan pada perangkat keras dan perangkat lunak. Jadi hampir semua komunikasi yang terjadi pada jaringan komputer pasti melibatkan protokol.
+
+Sebagai contoh, seperti orang yang mengirimkan email. Email dalam komputer bisa disebut dengan sebuah data. Sehingga email yang dikirimkan pada seseorang dari komputer satu ke komputer lain sebenarnya adalah pengiriman data.
+
+Setiap orang mengirimkan email, pasti email akan melewati beberapa protokol. Semua protokol  harus dilalui agar email bisa keluar dan diterima komputer lain pada jaringan yang sama atau berbeda.
+
+
+Fungsi Protokol Jaringan
+
+Protokol memegang peran yang cukup vital dalam perpindahan data di internet. Secara umum fungsi protokol adalah untuk menghubungkan antara pengirim dan penerima agar bisa berkomunikasi. Secara lebih khusus, berikut ini adalah fungsi-fungsi protokol:
+
+
+1. Addressing
+
+Header IP paket mengandung alamat yang memberikan identifikasi ke komputer pengirim dan penerima. Router menggunakan informasi ini untuk menuntun setiap paket melewati network komunikasi dan menghubungkan antara komputer pengirim dan penerima.
+
+
+2. Reassembly
+
+Kegunana internet protokol adalah memastikan pesan dipecah menjadi paket. Hal ini dikarenakan sebagian besar pesan terlalu besar untuk dimasukan ke dalam satu paket, dan karena paket tidak dikirimkan dalam urutan yang benar. Paket harus tersusun ulang saat tiba di penerima.
+
+
+3. Timeouts
+
+Setiap IP paket mengandung self-destructive counter yang membatasi umur dari paket. Jika paket sudah kadaluarsa, paket dihancurkan sehingga jaringan internet tidak mengalami overloaded dengan paket yang rusak.
+
+
+4. Options
+
+IP terdapat fitur tambahan yang mengizinkan komputer pengirim untuk memutuskan paket bagian mana yang didapatkan komputer penerima. Untuk menemukan bagian yang diambil maka perlu ditambahkan keamanan pada paket.
+
+
+Jenis-Jenis Protokol Jaringan
+
+Pada jaringan komputer di seluruh dunia, ada beberapa jenis protokol yang digunakan untuk berhubungan. Beberapa jenis protokol yaitu:
+
+
+1. TCP/IP
+
+Transmission Control Protocol (TCP) dan Internet Protocol (IP) merupakan standar dari komunikasi data yang dipakai oleh komunitas internet. Standar ini mengatur dalam proses tukar-menukar data atau informasi dari satu komputer ke komputer lain di dalam jaringan internet.
+
+
+2. User Datagram Protokol (UDP)
+
+User Datagram Protocol (UDP) adalah transport TCP/IP yang dapat mendukung komunikasi yang unreliable, tanpa adanya koneksi antar host di dalam suatu jaringan.
+
+
+3. Domain Name System (DNS)
+
+Domain Name Server atau DNS adalah distribute database yang dipakai dalam pencarian nama komputer di dalam jaringan menggunakan TCP/IP. DNS dapat bekerja pada jaringan dengan skala kecil sampai dengan global. Terkadang DNS juga digunakan pada aplikasi yang terhubung langsung dengan internet.
+
+
+4. HTTPS
+
+Protokol HTTPS pasti sudah sering Anda dengar. Kata HTTPS bisa dilihat di browser pada saat mengakses halaman website yang menggunakan SSL. Apalagi HTTPS sudah banyak digunakan di beberapa website.
+
+HTTPS berasal dar Hypertext Transfer Protocol atau HTTP. Nah, HTTP adalah protokol untuk mengatur komunikasi antara client dan server. Sedangkan HTTPS merupakan versi aman dari HTTP biasa.
+
+HTTPS merupakan kombinasi dari komunikasi HTTP biasa melalui Socket Secure Layer (SSL) atau Transport Layer Security (TLS), jadi bukan merupakan protokol yang berbeda. Sehingga, ada dua jenis lapisan enkripsi.
+
+Kombinasi dilakukan untuk menjaga keamanan beberapa serangan pihak ketiga. Biasanya serangan yang dilakukan adalah menyadap informasi dari komunikasi yang terjadi.
+
+
+5. SSH (Secure Shell)
+
+SSH adalah sebuah protocol jaringan yang memungkinkan terjadinya pertukaran data antara dua komputer dengan aman. Mulai dari mengirim file, mengendalakan pada jarak yg jauh dan lain sebagainya. Dibanding dengan Telnet, FT, protokol ini mempunyai tingkat keamanan yang unggul.
+
+
+
+6. Telnet (Telecommunication network)
+
+Dikembangkan pada 1969, Telnet memiliki standarisasi sebagai IETF STD 8 yang merupakan standar internet pertama kali. Protokol ini berjalan pada koneksi Internet atau LAN. Namun sayangnya Telnet mempunyai keterbatasan keamanan yang masih beresiko.
+
+
+7. OSI Layer
+
+
+OSI Layer merupakan standar komunikasi yang diterapkan untuk jaringan komputer. Standar ini digunakan untuk menentukan aturan sehingga seluruh alat komunikasi bisa saling terkoneksi melalui jaringan internet.
+
+OSI Layer dikembangkan untuk komputer agar dapat berkomunikasi pada jaringan yang berbeda secara efisien. Protoko ini digambarkan sebagai informasi dari suatu aplikasi komputer yang berpindah melalui jaringan internet ke komputer yang lainnya. OSI Layer secara konseptual terbagi ke dalam tujuh lapisan dimana masing-masing lapisan memiliki tugas yang spesifik.
+
+Ketujuh lapisan OSI Layer adalah sebagai berikut:
+
+
+1. Application Layer
+
+Layer OSI ini paling berdekatan dengan end user. Layer ini bertanggung-jawab atas pertukaran informasi antara program komputer, seperti program e-mail, dan service lain yang jalan di jaringan, seperti server printer atau aplikasi komputer lainnya.
+
+
+2. Presentation Layer
+
+Layer OSI ini bertanggung jawab dalam pengkodean dan konversi data dari application layer. Presentation later bertanggung jawab untuk memastikan semua data yang berasal dari application layer dapat dibaca pada sistem lainnya.
+
+
+3. Session Layer
+
+Layer OSI ini mempunyai tugas untuk menentukan bagaimana dua terminal menjaga, memelihara dan mengatur koneksi. Selain itu layer ini berfungsi untuk membentuk, me-manage, dan memutuskan session komunikasi antara entitas presentation layer.
+
+
+4. Transport Layer
+
+Layer OSI ini bertanggung jawab untuk membagi data menjadi segmen, menjaga koneksi logika antar terminal, dan menyediakan penanganan error.
+
+
+5. Network Layer
+
+Layer OSI ini bertanggung jawab untuk menentukan alamat jaringan, menentukan rute yang harus diambil selama perjalanan, dan menhaga antrian trafik di jaringan.
+
+
+6. DataLink Layer
+
+Layer OSI ini mempunyai tugas untuk menyediakan link untu data dan memaketkannya menjadi frame yang berhubungan dengan hardware kemudian didistribusikan melalui media.
+
+
+7. Physical Layer
+
+Layer OSI yang terakhir ini bertugas untuk mengirimkan dan menerima data mentah pada media fisik.
+
+Tujuan utama penggunaan OSI Layer adalah untuk membantu desainer jaringan memahami fungsi dari tiap-tiap layer yang berhubungan dengan aliran komunikasi data. Termasuk jenis-jenis protokol jaringan dan metode transmisi.
+
+
+
+
+TCP/IP
+
+TCP/IP merupakan standar komunikasi data dari komputer satu ke komputer yang lain di dalam jaringan internet. Protokol ini banyak digunakan oleh komunitas untuk standarisasi komunikasi yang digunakan.
+
+Protokol jaringan ini berupa kumpulan protokol (protocol suite) atau kumpulan protokol. Jadi protokol ini tidak dapat berdiri sendiri. Protokol TCP/IP paling banyak digunakan pada saat ini.
+
+Pada TCP/IP terdapat protokol sub yang menangani masalah komunikasi antar komputer. TCP/IP diimplementasikan arsitektur berlapis yang terdiri dari empat lapis, yaitu: Application Layer, Transport Layer, Internet Layer,  dan Network Access Layer
+
+
+
+
+Istilah Penting di Protokol Jaringan
+
+Istilah-istilah yang harus diperhatikan saat berhubungan dengan protokol adalah sebagai berikut:
+
+
+1. Syntax
+
+Merupakan format data atau struktur data yang sudah diubah bentuknya menjadi kode. Sebagai contoh, sebuah protokol sederhana akan memiliki urutan pada delapan bit pertama adalah alamat pengirim, delapan bit kedua adalah alamat penerima dan bit stream sisanya merupakan informasinya sendiri.
+
+
+2. Semantics
+
+Digunakan untuk mengetahui maksud dari informasi yang dikirim dan mengoreksi kesalahan yang terjadi dari informasi tadi. Semantics bisa diartikan sebagai setiap section bit.
+
+
+3. Timing
+
+Digunakan untuk mengetahui kecepatan transmisi data. Timing juga digunakan untuk mengetahui karakteristik data harus dikirim dan seberapa cepat data tersebut dikirim.
+
+
+Kesimpulan
+
+Hampir semua proses pertukaran informasi antar komputer melibatkan protokol. Hal inilah yang membuat protokol sebagai bagian yang penting untuk diketahui. Perkembangan bermacam-macamnya sistem informasi dan komunikasi saat ini tidak lepas dari peran perkembangan standar protokol.
+
+Protokol jaringan adalah aturan yang memudahkan untuk berinteraksi dengan sistem yang lain. Protokol membantu dalam proses pengiriman dan penerimaan data dalam proses komunikasi. Jika tidak ada standar protokol yang digunakan, maka proses pengiriman dan penerimaan suatu data akan sulit bahkan mustahil untuk dilakukan. Dikarenakan pada saat ini berbagai sistem informasi tidak hanya dikembangkan oleh satu vendor saja.
