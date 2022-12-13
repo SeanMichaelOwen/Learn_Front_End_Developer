@@ -1,0 +1,59 @@
+Other Internet Protocols
+Hypertext Transfer Protocols (HTTP) are used on top of Transmission Control Protocol (TCP) to transfer webpages and other content from websites.
+This reading explores other protocols commonly used on the Internet.
+
+Dynamic Host Configuration Protocol (DHCP)
+You've learned that computers need IP addresses to communicate with each other. When your computer connects to a network, the Dynamic Host Configuration Protocol or DHCP as it is commonly known, is used to assign your computer an IP address.
+Your computer communicates over User Datagram Protocol (UDP) using the protocol with a type of server called a DHCP server. The server keeps track of computers on the network and their IP addresses. It will assign your computer an IP address and respond over the protocol to let it know which IP address to use. Once your computer has an IP address, it can communicate with other computers on the network.
+
+Domain Name System Protocol (DNS)
+Your computer needs a way to know with which IP address to communicate when you visit a website in your web browser, for example, meta.com. The Domain Name System Protocol, commonly known as DNS, provides this function. Your computer then checks with the DNS server associated with the domain name and then returns the correct IP address.
+
+Internet Message Access Protocol (IMAP)
+Do you check your emails on your mobile or tablet device? Or maybe you use an email application on your computer?
+Your device needs a way to download emails and manage your mailbox on the server storing your emails. This is the purpose of the Internet Message Access Protocol or IMAP.
+
+Simple Mail Transfer Protocol (SMTP)
+Now that your emails are on your device, you need a way to send emails. The Simple Mail Transfer Protocol, or SMTP, is used. It allows email clients to submit emails for sending via an SMTP server. You can also use it to receive emails from an email client, but IMAP is more commonly used.
+
+Post Office Protocol (POP)
+The Post Office Protocol (POP) is an older protocol used to download emails to an email client. The main difference in using POP instead of IMAP is that POP will delete the emails on the server once they have been downloaded to your local device. Although it is no longer commonly used in email clients, developers often use it to implement email automation as it is a more straightforward protocol than IMAP.
+
+File Transfer Protocol (FTP)
+When running your websites and web applications on the Internet, you'll need a way to transfer the files from your local computer to the server they'll run on. The standard protocol used for this is the File Transfer Protocol or FTP. FTP allows you to list, send, receive and delete files on a server. Your server must run an FTP Server and you will need an FTP Client on your local machine. You'll learn more about these in a later course.
+
+Secure Shell Protocol (SSH)
+When you start working with servers, you'll also need a way to log in and interact with the computer remotely. The most common method of doing this is using the Secure Shell Protocol, commonly referred to as SSH. Using an SSH client allows you to connect to an SSH server running on a server to perform commands on the remote computer.
+All data sent over SSH is encrypted. This means that third parties cannot understand the data transmitted. Only the sending and receiving computers can understand the data.
+
+SSH File Transfer Protocol (SFTP)
+The data is transmitted insecurely when using the File Transfer Protocol. This means that third parties may understand the data that you are sending. This is not right if you transmit company files such as software and databases. To solve this, the SSH File Transfer Protocol, alternatively called the Secure File Transfer Protocol, can be used to transfer files over the SSH protocol. This ensures that the data is transmitted securely. Most FTP clients also support the SFTP protocol.
+
+
+
+Protokol Internet lainnya
+Hypertext Transfer Protocols (HTTP) digunakan di atas Transmission Control Protocol (TCP) untuk mentransfer halaman web dan konten lain dari situs web. Bacaan ini mengeksplorasi protokol lain yang biasa digunakan di Internet.
+
+Protokol Konfigurasi Host Dinamis (DHCP)
+Anda telah mempelajari bahwa komputer memerlukan alamat IP untuk berkomunikasi satu sama lain. Ketika komputer Anda terhubung ke jaringan, Protokol Konfigurasi Host Dinamis atau DHCP seperti yang biasa dikenal, digunakan untuk menetapkan alamat IP komputer Anda. Komputer Anda berkomunikasi melalui User Datagram Protocol (UDP) menggunakan protokol dengan jenis server yang disebut server DHCP. Server melacak komputer di jaringan dan alamat IP mereka. Ini akan memberikan komputer Anda alamat IP dan merespons melalui protokol untuk memberi tahu alamat IP mana yang akan digunakan. Setelah komputer Anda memiliki alamat IP, ia dapat berkomunikasi dengan komputer lain di jaringan.
+
+Protokol Sistem Nama Domain (DNS)
+Komputer Anda memerlukan cara untuk mengetahui alamat IP mana yang digunakan untuk berkomunikasi saat Anda mengunjungi situs web di browser web Anda, misalnya, meta.com . Protokol Sistem Nama Domain, umumnya dikenal sebagai DNS, menyediakan fungsi ini. Komputer Anda kemudian memeriksa dengan server DNS yang terkait dengan nama domain dan kemudian mengembalikan alamat IP yang benar.
+
+Protokol Akses Pesan Internet (IMAP)
+Apakah Anda memeriksa email di perangkat seluler atau tablet? Atau mungkin Anda menggunakan aplikasi email di komputer Anda? Perangkat Anda memerlukan cara untuk mengunduh email dan mengelola kotak surat Anda di server yang menyimpan email Anda. Ini adalah tujuan dari Internet Message Access Protocol atau IMAP.
+
+Protokol Transfer Surat Sederhana (SMTP)
+Sekarang email Anda ada di perangkat Anda, Anda memerlukan cara untuk mengirim email. Protokol Transfer Surat Sederhana, atau SMTP, digunakan. Ini memungkinkan klien email untuk mengirimkan email untuk dikirim melalui server SMTP. Anda juga dapat menggunakannya untuk menerima email dari klien email, tetapi IMAP lebih sering digunakan.
+
+Protokol Kantor Pos (POP)
+Post Office Protocol (POP) adalah protokol lama yang digunakan untuk mengunduh email ke klien email. Perbedaan utama dalam menggunakan POP daripada IMAP adalah POP akan menghapus email di server setelah diunduh ke perangkat lokal Anda. Meskipun tidak lagi umum digunakan di klien email, pengembang sering menggunakannya untuk mengimplementasikan otomatisasi email karena merupakan protokol yang lebih mudah daripada IMAP.
+
+Protokol Transfer File (FTP)
+Saat menjalankan situs web dan aplikasi web Anda di Internet, Anda memerlukan cara untuk mentransfer file dari komputer lokal Anda ke server yang akan dijalankannya. Protokol standar yang digunakan untuk ini adalah File Transfer Protocol atau FTP. FTP memungkinkan Anda untuk membuat daftar, mengirim, menerima, dan menghapus file di server. Server Anda harus menjalankan Server FTP dan Anda memerlukan Klien FTP di mesin lokal Anda. Anda akan belajar lebih banyak tentang ini di kursus selanjutnya.
+
+Protokol Shell Aman (SSH)
+Saat Anda mulai bekerja dengan server, Anda juga memerlukan cara untuk masuk dan berinteraksi dengan komputer dari jarak jauh. Metode paling umum untuk melakukan ini adalah menggunakan Protokol Secure Shell, biasa disebut SSH. Menggunakan klien SSH memungkinkan Anda terhubung ke server SSH yang berjalan di server untuk menjalankan perintah di komputer jarak jauh. Semua data yang dikirim melalui SSH dienkripsi. Ini berarti bahwa pihak ketiga tidak dapat memahami data yang dikirimkan. Hanya komputer pengirim dan penerima yang dapat memahami data tersebut.
+
+Protokol Transfer File SSH (SFTP)
+Data ditransmisikan secara tidak aman saat menggunakan File Transfer Protocol. Ini berarti bahwa pihak ketiga dapat memahami data yang Anda kirimkan. Ini tidak benar jika Anda mengirimkan file perusahaan seperti perangkat lunak dan database. Untuk mengatasi ini, Protokol Transfer File SSH, atau disebut Protokol Transfer File Aman, dapat digunakan untuk mentransfer file melalui protokol SSH. Ini memastikan bahwa data ditransmisikan dengan aman. Sebagian besar klien FTP juga mendukung protokol SFTP.
