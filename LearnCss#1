@@ -1,0 +1,296 @@
+When styling a web page, there are many types of selectors available that allow developers to be as broad or as specific as they need to be when selecting HTML elements to apply CSS rules to.
+
+Here you will learn about some of the common CSS selectors that you will use as a developer.
+
+Element Selectors
+The element selector allows developers to select HTML elements based on their element type.
+
+For example, if you use p as the selector, the rule will apply to all p elements on the webpage.
+
+HTML
+
+12
+<p>Once upon a time...</p>
+<p>In a hidden land...</p>
+CSS
+
+123
+p { 
+  color: blue; 
+}
+ID Selectors
+The ID selector uses the id attribute of an HTML element. Since the id is unique within a webpage, it allows the developer to select a specific element for styling. ID selectors are prefixed with a # character.
+
+HTML
+
+1
+<span id="latest">New!</span>
+CSS
+
+321
+#latest { 
+  background-color: purple; 
+}
+Class Selectors
+Elements can also be selected based on the class attribute applied to them. The CSS rule has been applied to all elements with the specified class name. The class selector is prefixed with a . character.
+
+In the following example, the CSS rule applies to both elements as they have the navigation CSS class applied to them.
+
+HTML
+
+12
+<a class="navigation">Go Back</a>
+<p class="navigation">Go Forward</p>
+CSS
+
+123
+.navigation { 
+  margin: 2px;
+}
+Element with Class Selector
+A more specific method for selecting HTML elements is by first selecting the HTML element, then selecting the CSS class or ID.
+
+The example below selects all p elements that have the CSS class introduction applied to them.
+
+HTML
+
+1
+<p class="introduction"></a>
+CSS
+
+123
+p.introduction { 
+  margin: 2px;
+}
+Descendant Selectors
+Descendant selectors are useful if you need to select HTML elements that are contained within another selector.
+
+Let's explore an example.
+
+You have the following HTML structure and CSS rule.
+
+HTML
+
+1234567891011
+<div id="blog">
+  <h1>Latest News</h1>
+  <div>
+    <h1>Today's Weather</h1>
+    <p>The weather will be sunny</p>
+  </div>
+  <p>Subscribe for more news</p>
+</div>
+<div>
+  <h1>Archives</h1>
+
+CSS
+
+123
+#blog h1 {
+  color: blue;
+}
+The CSS rule will select all h1 elements that are contained within the element with the ID blog. The CSS rule will not apply to the h1 element containing the text Archives.
+
+The structure of a descendant selector is a CSS selector, followed by a single space character, followed by another CSS selector.
+
+Multiple descendants can also be selected. For example, to select all h1 elements that are descendants of div elements which are descendants of the blog element, the selector is specified as follows.
+
+CSS
+
+123
+#blog div h1 {
+  color: blue;
+}
+Child Selectors
+Child selectors are more specific than descendant selectors. They only select elements that are immediate descendants (children) of a selector (the parent).
+
+For example, you have the following HTML structure:
+
+HTML
+
+12345678
+<div id="blog">
+  <h1>Latest News</h1>
+  <div>
+    <h1>Today's Weather</h1>
+    <p>The weather will be sunny</p>
+  </div>
+  <p>Subscribe for more news</p>
+</div>
+If you wanted to style the h1 element containing the text Latest News, you can use the following child selector:
+
+CSS
+
+123
+#blog > h1 {
+  color: blue;
+}
+This will select the element with the ID blog (the parent), then it will select all h1 elements that are contained directly in that element (the children). The structure of the child selector is a CSS selector followed by the child combinator symbol > followed by another CSS selector.
+
+Note that this will not go beyond a single depth level. Therefore, the CSS rule will not be applied to the h1 element containing the text Today's Weather.
+
+:hover Pseudo-Class
+A special keyword called a pseudo-class allows developers to select elements based on their state. Don't worry too much about what that means right now. For now, let's look at how the hover pseudo-class allows you to style an element when the mouse cursor hovers over the element.
+
+The simplest example of this is changing the color of a hyperlink when it is hovered over. To do this, you add the :hover pseudo-class to the end of the selector. In the following example, adding :hover  to the a element will change the color of the hyperlink to orange when it is hovered over.
+
+CSS
+
+123
+a:hover {
+  color: orange;
+}
+This pseudo-class is very useful for creating visual effects based on user interaction.
+
+Other Selectors
+There are many other CSS selectors available to style your webpage. 
+
+
+
+Indonesia:
+Saat menata gaya halaman web, ada banyak jenis pemilih yang tersedia yang memungkinkan pengembang menjadi seluas atau sespesifik yang mereka perlukan saat memilih elemen HTML untuk menerapkan aturan CSS.
+
+Di sini Anda akan belajar tentang beberapa pemilih CSS umum yang akan Anda gunakan sebagai pengembang.
+
+Pemilih Elemen
+Pemilih elemen memungkinkan pengembang untuk memilih elemen HTML berdasarkan jenis elemennya.
+
+Misalnya, jika Anda menggunakan  p  sebagai pemilih, aturan akan diterapkan ke semua   elemen p di halaman web.
+
+HTML
+
+12
+<p>Once upon a time...</p>
+<p>In a hidden land...</p>
+CSS
+
+123
+p { 
+  color: blue; 
+}
+Pemilih ID
+Pemilih ID menggunakan atribut id dari elemen HTML. Karena id itu unik di dalam halaman web, itu memungkinkan pengembang untuk memilih elemen tertentu untuk gaya. Pemilih ID diawali dengan karakter # .
+
+HTML
+
+1
+<span id="latest">New!</span>
+CSS
+
+321
+#latest { 
+  background-color: purple; 
+}
+Pemilih Kelas
+Elemen juga dapat dipilih berdasarkan atribut kelas yang diterapkan padanya. Aturan CSS telah diterapkan ke semua elemen dengan nama kelas yang ditentukan. Pemilih kelas diawali dengan . karakter.
+
+Dalam contoh berikut, aturan CSS berlaku untuk kedua elemen karena kelas  navigasi  CSS diterapkan padanya.
+
+HTML
+
+12
+<a class="navigation">Go Back</a>
+<p class="navigation">Go Forward</p>
+CSS
+
+123
+.navigation { 
+  margin: 2px;
+}
+Elemen dengan Pemilih Kelas
+Metode yang lebih spesifik untuk memilih elemen HTML adalah dengan terlebih dahulu memilih elemen HTML, kemudian memilih kelas atau ID CSS.
+
+Contoh di bawah ini memilih semua  elemen p yang  menerapkan pengenalan  kelas CSS  .
+
+HTML
+
+1
+<p class="introduction"></a>
+CSS
+
+123
+p.introduction { 
+  margin: 2px;
+}
+Pemilih Keturunan
+Pemilih turunan berguna jika Anda perlu memilih elemen HTML yang terdapat di dalam pemilih lain.
+
+Mari kita jelajahi sebuah contoh.
+
+Anda memiliki struktur HTML dan aturan CSS berikut.
+
+HTML
+
+1234567891011
+<div id="blog">
+  <h1>Latest News</h1>
+  <div>
+    <h1>Today's Weather</h1>
+    <p>The weather will be sunny</p>
+  </div>
+  <p>Subscribe for more news</p>
+</div>
+<div>
+  <h1>Archives</h1>
+
+CSS
+
+123
+#blog h1 {
+  color: blue;
+}
+Aturan CSS akan memilih semua  elemen h1  yang terkandung dalam elemen dengan ID  blog . Aturan CSS tidak akan berlaku untuk  elemen h1  yang berisi teks  Archives .
+
+Struktur dari pemilih turunan adalah pemilih CSS, diikuti dengan satu karakter spasi, diikuti oleh pemilih CSS lainnya.
+
+Beberapa keturunan juga dapat dipilih. Misalnya, untuk memilih semua  elemen h1  yang merupakan turunan dari  elemen div  yang merupakan turunan dari  elemen blog  , pemilihnya ditentukan sebagai berikut.
+
+CSS
+
+123
+#blog div h1 {
+  color: blue;
+}
+Pemilih Anak
+Pemilih turunan lebih spesifik daripada pemilih keturunan. Mereka hanya memilih elemen yang merupakan keturunan langsung (anak) dari pemilih (induk).
+
+Misalnya, Anda memiliki struktur HTML berikut:
+
+HTML
+
+12345678
+<div id="blog">
+  <h1>Latest News</h1>
+  <div>
+    <h1>Today's Weather</h1>
+    <p>The weather will be sunny</p>
+  </div>
+  <p>Subscribe for more news</p>
+</div>
+Jika Anda ingin menata  elemen h1  yang berisi teks  Berita Terbaru , Anda dapat menggunakan pemilih turunan berikut:
+
+CSS
+
+123
+#blog > h1 {
+  color: blue;
+}
+Ini akan memilih elemen dengan ID  blog  (induk), lalu akan memilih semua  elemen h1  yang terkandung langsung di elemen tersebut (anak). Struktur pemilih anak adalah pemilih CSS diikuti oleh simbol kombinator anak  > diikuti oleh pemilih CSS lainnya.
+
+Perhatikan bahwa ini tidak akan melampaui satu level kedalaman. Oleh karena itu, aturan CSS  tidak  akan diterapkan pada  elemen h1  yang berisi teks  Cuaca Hari Ini .
+
+:hover Pseudo-Class
+Kata kunci khusus yang disebut pseudo-class memungkinkan pengembang untuk memilih elemen berdasarkan statusnya. Jangan terlalu khawatir tentang apa artinya itu sekarang. Untuk saat ini, mari kita lihat bagaimana hover pseudo-class memungkinkan Anda memberi gaya pada elemen saat kursor mouse melayang di atas elemen.
+
+Contoh paling sederhana dari ini adalah mengubah warna hyperlink saat diarahkan. Untuk melakukan ini, Anda menambahkan  :hover  pseudo-class ke akhir pemilih. Dalam contoh berikut, menambahkan :hover   ke elemen a  akan mengubah warna hyperlink menjadi oranye saat diarahkan.
+
+CSS
+
+123
+a:hover {
+  color: orange;
+}
+Kelas semu ini sangat berguna untuk membuat efek visual berdasarkan interaksi pengguna.
+
+Pemilih Lainnya
+Ada banyak pemilih CSS lain yang tersedia untuk menata halaman web Anda.
