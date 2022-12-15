@@ -349,3 +349,4 @@ p {
 Nilai garis dekorasi teks yang paling umum   digunakan adalah:  underline ,  overline ,  line-through  dan  none . Tidak ada adalah nilai default untuk tidak menggunakan dekorasi teks.
 
 Ada banyak gaya yang tersedia untuk  properti gaya dekorasi teks   ;  padat ,   ganda ,   putus -putus ,   putus- putus   dan   bergelombang . Properti  text-decoration-style  memerlukan garis dekorasi untuk ditentukan. Jika gaya dekorasi tidak ditentukan,  solid  akan digunakan.
+
