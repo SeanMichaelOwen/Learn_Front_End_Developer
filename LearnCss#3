@@ -1,0 +1,215 @@
+Let's explore how to align text and HTML elements using CSS.
+
+Let's first focus on horizontal alignment. Vertical alignment is more difficult so you'll explore that later on.
+
+Text Alignment
+
+Aligning text within an HTML element is very simple. To do this, you use the text-align CSS property. In the following example, the CSS rule is setting the text of all paragraph elements to be center aligned.
+
+123
+p {
+    text-align: center;
+}
+Text alignment can be set to left, right, center and justify.
+
+The justify alignment spreads the text out so that every line of the text has the same width.
+
+The default alignment is left for languages that are left-to-right such as English. For right-to-left languages such as Arabic, the default alignment is right.
+
+HTML Element Alignment
+
+HTML element alignment is more complicated than text alignment. To align HTML elements, you must consider the box model and document flow from previous lessons. Aligning an HTML element is done by changing the properties of its box model and how it impacts the document flow.
+
+HTML Element Center Alignment
+
+To center align an element, you set a width on the element and push its margins out to fill the remaining available space of the parent element as in the following HTML structure:
+
+1234
+<div class="parent">
+  <div class="child">
+  </div>
+</div>
+In your CSS, you'll set the parent element to have a red border to visualize the space it occupies:
+
+123
+.parent {
+  border: 4px solid red;
+}
+The child element will have a width equal to 50% of the parent element with a padding of 20 pixels. Note that padding: 20px is shorthand for setting the padding top, bottom, left and right to 20px. To visualize the space it occupies, set the border to green:
+
+12345
+.child {
+  width: 50%;
+  padding: 20px;
+  border: 4px solid green;
+}
+To align the element to the center, set its margin property to auto. The auto will tell the browser to calculate the margin automatically based on the space available.
+
+123456
+.child {
+  width: 50%;
+  padding: 20px;
+  border: 4px solid green;
+  margin: auto;
+}
+The result is the child element is centered within the parent element:
+
+Alignment of the child in the parent element 
+It is important to note that this works because the div element is a block-level element.  
+
+If you want to align an inline element like img, you will need to change it to a block-level element. Similar to the div example, you add the img to a parent element:
+
+123
+<div class="parent">
+  <img src="photo.png" class="child">
+</div>
+The CSS rule then changes the img element to a block-level element and sets its margin to auto:
+
+12345
+.child {
+  display: block;
+  width: 50%;
+  margin: auto;
+}
+To be more precise, in CSS you can set only the left and right margins to auto. This allows you to set the top and bottom margins to specific values if needed.
+
+123456
+.child {
+  display: block;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+HTML Element Left / Right Alignment
+
+The two most common ways to left and right align elements are to use the float property and the position property.
+
+The position property has several value options that impact how the element displays in the document flow. You'll explore how to use the position property later on. For now, let's focus on the float property.
+
+The float property sets an element's position relative to the text content within a parent element. Text will wrap around the element.
+
+In the following example, the image will be aligned to the right of the div element. The text content will wrap around the image:
+
+HTML
+
+123
+<div class="parent">
+  <img src="photo.png" class="child"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eu odio eget leo auctor porta sit amet sit amet justo. Donec fermentum quam in diam volutpat, at lacinia diam placerat. Aenean quis feugiat sem. Suspendisse a dui massa. Phasellus scelerisque, mi vestibulum iaculis tristique, orci tellus gravida nisi, in pellentesque elit massa ut lorem. Sed elementum ornare nunc vel cursus. Duis sed enim in nulla efficitur convallis sed 
+CSS
+
+123
+.child {
+  float: right;
+}
+The following displays in the web browser:  
+
+Text displayed in browser that is right-aligned using the float property 
+
+Indonesian:
+Mari jelajahi cara menyelaraskan teks dan elemen HTML menggunakan CSS.
+
+Pertama mari kita fokus pada perataan horizontal. Perataan vertikal lebih sulit sehingga Anda akan mempelajarinya nanti.
+
+Perataan Teks
+
+Menyelaraskan teks dalam elemen HTML sangat sederhana. Untuk melakukan ini, Anda menggunakan   properti CSS perataan teks . Dalam contoh berikut, aturan CSS menyetel teks semua elemen paragraf agar rata tengah.
+
+123
+p {
+    text-align: center;
+}
+Perataan teks dapat diatur ke  kiri ,  kanan ,  tengah  dan  ratakan .
+
+Perataan  justifikasi  menyebarkan teks sehingga setiap baris teks memiliki lebar yang sama.
+
+Perataan default  dibiarkan  untuk bahasa yang kiri-ke-kanan seperti bahasa Inggris. Untuk bahasa yang ditulis dari kanan ke kiri seperti bahasa Arab, perataan defaultnya adalah  right .
+
+Perataan Elemen HTML
+
+Perataan elemen HTML lebih rumit daripada perataan teks. Untuk menyelaraskan elemen HTML, Anda harus mempertimbangkan model kotak dan alur dokumen dari pelajaran sebelumnya. Menyelaraskan elemen HTML dilakukan dengan mengubah properti model kotaknya dan pengaruhnya terhadap alur dokumen.
+
+Penyelarasan Pusat Elemen HTML
+
+Untuk memusatkan elemen, Anda menetapkan lebar pada elemen dan menekan marginnya untuk mengisi sisa ruang yang tersedia dari elemen induk seperti pada struktur HTML berikut:
+
+1234
+<div class="parent">
+  <div class="child">
+  </div>
+</div>
+Di CSS Anda, Anda akan menyetel  elemen induk  agar memiliki batas merah untuk memvisualisasikan ruang yang ditempatinya:
+
+123
+.parent {
+  border: 4px solid red;
+}
+Elemen  anak  akan memiliki lebar 50% dari  elemen induk  dengan padding 20 piksel. Perhatikan bahwa padding: 20px adalah singkatan untuk mengatur padding top, bottom, left dan right menjadi 20px . Untuk memvisualisasikan ruang yang ditempatinya, atur batas menjadi hijau:
+
+12345
+.child {
+  width: 50%;
+  padding: 20px;
+  border: 4px solid green;
+}
+Untuk menyelaraskan elemen ke tengah, atur  properti marginnya  ke  auto . Otomatis akan memberi tahu browser untuk menghitung margin secara otomatis  berdasarkan ruang yang tersedia . 
+
+123456
+.child {
+  width: 50%;
+  padding: 20px;
+  border: 4px solid green;
+  margin: auto;
+}
+Hasilnya adalah  elemen anak  dipusatkan di dalam  elemen induk  :
+
+Penyelarasan anak dalam elemen induk
+Penting untuk dicatat bahwa ini berfungsi karena  elemen div  adalah elemen tingkat blok.  
+
+Jika Anda ingin menyelaraskan elemen sebaris seperti  img , Anda harus mengubahnya menjadi elemen tingkat blok. Mirip dengan  contoh div  , Anda menambahkan  img  ke elemen induk:
+
+123
+<div class="parent">
+  <img src="photo.png" class="child">
+</div>
+Aturan CSS kemudian mengubah  elemen img  menjadi elemen tingkat blok dan mengatur marginnya menjadi  otomatis:
+
+12345
+.child {
+  display: block;
+  width: 50%;
+  margin: auto;
+}
+Lebih tepatnya, di CSS Anda hanya dapat mengatur margin kiri dan kanan menjadi otomatis. Ini memungkinkan Anda mengatur margin atas dan bawah ke nilai tertentu jika diperlukan.
+
+123456
+.child {
+  display: block;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+Perataan Kiri / Kanan Elemen HTML
+
+Dua cara paling umum untuk menyelaraskan elemen kiri dan kanan adalah dengan menggunakan  properti float  dan properti  position  .
+
+Properti  position  memiliki beberapa opsi nilai yang memengaruhi cara elemen ditampilkan dalam alur dokumen. Anda akan mempelajari cara menggunakan  properti posisi  nanti. Untuk saat ini, mari fokus pada  properti float  .
+
+Properti  float  menetapkan posisi elemen relatif terhadap konten teks dalam elemen induk. Teks akan membungkus elemen.
+
+Dalam contoh berikut, gambar akan disejajarkan di sebelah kanan  elemen div  . Konten teks akan membungkus gambar:
+
+HTML
+
+123
+<div class="parent">
+  <img src="photo.png" class="child"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eu odio eget leo auctor porta sit amet sit amet justo. Donec fermentum quam in diam volutpat, at lacinia diam placerat. Aenean quis feugiat sem. Suspendisse a dui massa. Phasellus scelerisque, mi vestibulum iaculis tristique, orci tellus gravida nisi, in pellentesque elit massa ut lorem. Sed elementum ornare nunc vel cursus. Duis sed enim in nulla efficitur convallis sed 
+CSS
+
+123
+.child {
+  float: right;
+}
+Tampilan berikut di web browser:  
+
+Teks ditampilkan di browser yang rata kanan menggunakan properti float
+
