@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Little Lemon</title>
+    </head>
+    <body>
+        <h1>Our Menu</h1>
+        <h2>Falafel</h2>
+        <p>Chickpea, herbs and spices</p>
+        <img src="./falafel.png" width="240" alt="A Falafel">
+        <h2>Pasta Salad</h2>
+        <p>Lettuce, vegetables, mozzarella</p>
+        <img src="./salad.jpeg" width="240" alt="A Pasta Salad">
+        <a href="./Location.html">Our Location</a>
+        <table>
+            <tr>
+                <td>Falafel</td>
+                <td>$10.00</td>
+            </tr>
+            <tr>
+                <td>Pasta Salad</td>
+                <td>$12.00</td>
+            </tr>
+        </table>
+    </body>
+</html>
