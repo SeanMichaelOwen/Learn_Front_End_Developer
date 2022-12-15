@@ -4,5 +4,10 @@
 
     <label for="password">Password</label><br>
     <input type="password">
-    <input type="submit">
+    <input type="submit"><br>
+    <!-- Checkbox -->
+    <label for="dog">Dog</label>
+    <input type="checkbox" name="dog" value="dog"><br>
+    <label for="cat">cat</label>
+    <input type="checkbox" name="cat" value="cat">
 </form>
